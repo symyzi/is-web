@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+  }
+  section.gallery{
+    position: relative;
+    padding: 45px 0;
+  }
+  h2.title{
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 45px;
+    position: relative;
+  }
+  h2.title:after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #111111;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .gallery-list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    font-size: 0;
+    margin-top: 10px;
+  }
+  .gallery-item{
+    display: block;
+    flex: 25%;
+    overflow: hidden;
+    position: relative;
+  }
+  .gallery-item-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity .5s ease;
+    z-index: 2;
+  }
+  .gallery-item:hover .gallery-item-hover{
+    opacity: 1;
+  }
+  .gallery-item:hover {
+    transform: scale(1.6) rotate(5deg);
+  }
+  .img-1{
+    background: url("../Images/nsx.jpg");
+    background-size: cover;
+    transition: all .5s ease;
+  }
+  .img-2{
+    background: url("../Images/mx-5.jpg");
+    background-size: cover;
+    transition: all .5s ease;
+  }
+  .img-3{
+    background: url("../Images/rx-7.jpg");
+    background-size: cover;
+    transition: all .5s ease;
+  }
+  .img-4{
+    background: url("../Images/supra-mk4.jpg");
+    background-size: cover;
+    transition: all .5s ease;
+  }
+  .img-5{
+    background: url("../Images/180sx.jpg");
+    background-size: cover;
+    transition: all .5s ease;
+  }
+  .img-6{
+    background: url("../Images/skyline-r34.jpg");
+    background-size: cover;
+    transition: all .5s ease;
+  }
+  .img-7{
+    background: url("../Images/evo.jpg");
+    background-size: cover;
+    transition: all .5s ease;
+  }
+  .img-8{
+    background: url("../Images/silvia-s15.jpg");
+    background-size: cover;
+    transition: all .5s ease;
+  }
+  
+  .gallery-item-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    z-index: 2;
+  }
+  @media (max-width: 991px){
+    .gallery-item{
+      flex: 33.3%;
+    }
+  }
+  @media (max-width: 768px){
+    .gallery-item{
+      flex: 50%;
+    }
+  }
+  @media (max-width: 530px){
+    .gallery-item{
+      flex: 100%;
+    }
+  }
