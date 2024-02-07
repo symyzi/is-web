@@ -1,0 +1,116 @@
+* {
+  margin: 0; /* Сброс отступов */
+  padding: 0; /* Сброс внутренних отступов */
+  box-sizing: border-box; /* делаем фикс размер */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Установка шрифта для всего текста на странице */
+  min-height: 100vh; /* Установка минимальной высоты body на весь видимый экран */
+  display: flex; /* Устанавливаем flex контейнер для body */
+  flex-direction: column;
+  background-color: #D9D9D9;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Выравнивание элементов по центру по вертикали */
+  justify-content: space-between;
+  background-color: #246B73;
+  color: #D9D9D9;
+  padding: 20px; /* Установка отступа вокруг содержимого */
+  text-align: center; /* Выравнивание текста по центру */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Добавление тени */
+}
+
+.site-title {
+  font-size: 32px;
+  margin: 0;
+  color: #F24B4B;
+}
+
+nav {
+  margin: 0 auto; /* Установка отступов слева и справа, центрирование по горизонтали */
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline; /* Устанавливаем элементы списка в ряд */
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #D9D9D9;
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  background-color: #F24B4B;
+}
+
+main {
+  flex: 1; /* Элемент main занимает все доступное пространство по вертикали */
+  padding: 20px;
+}
+
+footer {
+  background-color: #152620;
+  color: #D9D9D9;
+  text-align: center;
+  padding: 10px 0; /* Установка отступов сверху и снизу */
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Разрешение переноса элементов на новую строку */
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 10px solid #152620;
+  padding-bottom: 20px;
+}
+
+.gallery img {
+  width: 400px; /* Установка ширины изображения */
+  height: 500px; /* Автоматическое подстраивание высоты */
+  margin: 5px; /* Установка отступов вокруг изображения */
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3); /* Добавление тени */
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+      width: 48%; /* Установка ширины изображения для маленьких экранов */
+      margin: 1%; /* Установка отступов */
+  }
+}
+
+.text-box {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  background-color: #A67E6F;
+  color: #333;
+  text-transform: none; /* Отмена преобразования текста */
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.h-text {
+  text-indent: 20px; /* Установка красной строки */
+  word-spacing: 0;
+  letter-spacing: 0;
+  font-style: italic; /* Установка стиля шрифта (курсив) */
+  text-decoration: none; /* Установка стиля подчеркивания */
+}
+
+ul {
+  list-style: none;
+}
