@@ -103,7 +103,7 @@ footer {
   padding: 20px;
 }
 
-.h-text {
+.text-box__header {
   text-indent: 20px; /* Установка красной строки */
   word-spacing: 0;
   letter-spacing: 0;
