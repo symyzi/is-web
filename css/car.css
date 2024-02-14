@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #545559;
+}
+.header-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #246B73;
+    color: #152620;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.header-content__site-title {
+    font-size: 32px;
+    margin: 0;
+    color: #F24B4B;
+}
+.header-content__site-title a {
+    color: inherit;
+    text-decoration: none;
+}
+header nav {
+    margin: 0 auto;
+}
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+header nav ul li a {
+    color: #D9D9D9;
+    text-decoration: none;
+    font-size: 18px;
+}
+header nav ul li a:hover {
+    background-color: #F24B4B;
+}
+main {
+    flex: 1;
+    padding: 70px 20px 20px;
+}
+footer {
+    background-color: #152620;
+    color: #D9D9D9;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);
+}
+.text-box {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    background-color: #A67E6F;
+    color: #333;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    flex-basis: 60%;
+    margin-left: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text-box__header {
+    text-indent: 20px;
+    font-style: italic;
+    text-decoration: none;
+}
+.table-container {
+    max-width: 50%;
+    overflow-x: auto;
+    float: left;
+}
+.table {
+    display: grid;
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+}
+.table-row > td {
+    border: 1px solid #aaa;
+    padding: 8px;
+    text-align: left;
+}
+.odd {
+    background-color: #f2f2f2;
+}
+.even {
+    background-color: #e6e6e6;
+}
+@media only screen and (max-width: 768px) {
+    .table-container {
+        max-width: 100%;
+    }
+    .table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+    .table-header, .table-row {
+        display: block;
+    }
+    .table-row > td {
+        display: block;
+        width: 100%;
+    }
+}
+.car-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.car-image {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.text-box {
+    flex-basis: 70%;
+    margin-left: 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+}
+@media only screen and (max-width: 768px) {
+    .car-image {
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .image-container {
+        max-width: 100%;
+    }
+}
