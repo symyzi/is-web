@@ -54,7 +54,7 @@ function error(errorText){
 function a(limits){
     const spinGif = document.querySelector(".spin-gif")
     spinGif.classList.remove("hide")
-    fetch(`https://jsonplaceholder.typicod.com/posts?_limits=${limits}`)
+    fetch(`https://jsonplaceholder.typicode.com/posts?_limits=${limits}`)
       .then(response => response.json())
       .then(json =>{
         json.forEach(element => {
