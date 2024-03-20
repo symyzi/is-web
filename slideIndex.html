@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>JDM culture</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="JDM, japanese cars, japan, tuning">
+    <meta name="description" content="jdm culture website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/time_loading.js"></script>
+    <script src="libs/splide-4.1.3/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="libs/splide-4.1.3/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/slideIndex.css">
+</head>
+<body>
+<header class="header-content">
+    <h1 class="header-content__site-title"><a href="index.html">JDM Culture</a></h1>
+    <nav>
+        <ul>
+            <li><a class="nav-item" href="#">История</a></li>
+            <li><a class="nav-item" href="famousCars.html">Известные машины</a></li>
+            <li><a class="nav-item" href="#">Тюнинг</a></li>
+            <li><a class="nav-item" href="#">Известные люди</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img src="img/car1.jpg" alt=""></li>
+                  <li class="splide__slide"><img src="img/car2.jpg" alt=""></li>
+                  <li class="splide__slide"><img src="img/car3.jpg" alt=""></li>
+                  <li class="splide__slide"><img src="img/car4.jpg" alt=""></li>
+              </ul>
+        </div>
+    </section>
+
+    <div class="text-box">
+        <h2 class="text-box__header">Что такое JDM?</h2>
+        <p>JDM расшифровывается как “Japan Domestic Market” , а переводится - внутренний рынок Японии. 
+            Под эту субкультуру попали японские автомобили выпускавшиеся с 1980-х годов и до 2004-х. </p>
+         <p>Стиль JDM появился в 80-е годы с распространением японских автомобилей за рубежом Японии . В те года как раз начался зараждаться :
+             дрифт и тайматак.А так как все автопроизводители делали  по законам Японии . Где нельзя выпускать автомобиль мощностью свыше 280 л.с. 
+             и максимальной скоростью больше 180 км/час . Начался развиваться и тюнинг автомобилей . Энтузиасты соревнований и понимавшие их желания про
+             изводители тюнингованых деталей во многом и определили JDM-щиков. 
+         </p>
+    </div>
+    <div class="text-box">
+        <h2 class="text-box__header">JDM включает в себя определённую  модернизацию авто , а точнее некоторый стайлинг :</h2>
+        <ul>
+            <li>Фары отличаются от обычных наличием ламп головного сверка на желтый или тонирование оптики в пленку того же цвета .</li>
+            <li>На кузов устанавливаются расширения арок на заклёпках , яркая раскраска в Японском стиле .</li>
+            <li>Устанавливают койловеры для занижения .</li>
+            <li>По колёсам предпочтение дают фирме WORK и BBS</li>
+            <li>Не редко можно встретить и полноценные обвесы в круг от именитых брендов :Advan , TRD , Veil Side , Nismo и т.д.</li>
+        </ul>
+    </div>
+</main>
+
+
+<footer>
+    &copy; 2024 JDM Culture
+    <div id="load-time"></div>
+</footer>
+</body>
+<script>
+    var splide = new Splide( '.splide', {
+  type   : 'loop',
+  perPage: 3,
+  focus  : 'center',
+} );
+
+splide.mount();
+  </script>
+</html>

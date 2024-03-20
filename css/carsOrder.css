@@ -1,0 +1,61 @@
+.orders-form {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orders-form h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.orders-form {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.orders-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.orders-form input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.orders-form button {
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.orders-form button:hover {
+    background-color: #555;
+}
+
+.orders-output {
+    display: flex;
+    flex-direction: column; /* Change from grid to column */
+    gap: 10px;
+}
+
+.order {
+    border: 1px solid #ccc;
+    border-color: #246B73;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #246B73;
+}
+
+.order-name {
+    font-weight: bold;
+}
